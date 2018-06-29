@@ -1,6 +1,6 @@
-## origin theme
+## greycube theme
 
-origin theme
+greycube theme
 
 #### License
 
