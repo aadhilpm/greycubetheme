@@ -1,14 +1,4 @@
 {
-    "css/origintheme.min.css": [
-        "public/css/origintheme.css",
-        "public/css/skin-origin.css",
-        "public/css/custom.css",
-        "public/css/temp.css"
-    ],
-    "js/origintheme.min.js": [
-        "public/js/origintheme.js",
-        "public/js/custom.js"
-    ],
     "js/origintheme-template.min.js": [
         "public/js/template/main-sidebar.html",
         "public/js/template/stacey-sidebar.html"

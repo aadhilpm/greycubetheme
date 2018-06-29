@@ -3,12 +3,12 @@ from __future__ import unicode_literals
 from . import __version__ as app_version
 
 app_name = "origintheme"
-app_title = "origin theme"
-app_publisher = "Who Agency"
-app_description = "ERPnext Theme"
+app_title = "greycube theme"
+app_publisher = "GreyCube Technologies"
+app_description = "Frappe Theme"
 app_icon = "fa fa-paint-brush"
 app_color = "gold"
-app_email = "josh@whoagency.com"
+app_email = "admin@greycube.in"
 app_license = "MIT"
 
 # Includes in <head>
@@ -20,10 +20,12 @@ app_include_css = [
     "/assets/origintheme/css/skin-origin.css",
     "/assets/origintheme/css/custom.css",
     "/assets/origintheme/css/temp.css",
+    "/assets/origintheme/css/greycube.css",
 ]
 app_include_js = [
     "/assets/origintheme/js/origintheme.js",
     "/assets/origintheme/js/custom.js",
+    "/assets/origintheme/js/greycube.js",
     "/assets/js/origintheme-template.min.js",
 ]
 
