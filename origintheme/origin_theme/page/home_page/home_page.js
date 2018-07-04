@@ -11,7 +11,7 @@ frappe.Homepage = Class.extend({
 	init: function (parent) {
 		frappe.ui.make_app_page({
 			parent: parent,
-			title: __("Home"),
+			title: __(""),
 			single_column: true
 		});
 
