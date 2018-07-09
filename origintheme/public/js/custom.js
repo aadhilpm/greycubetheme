@@ -120,15 +120,14 @@ origintheme.set_user_background = function(src, selector, style){
 // }
 
 frappe.templates["logo"] = '<a href="/desk#List/Customer/List" class="logo">'
-+     ' <span class="logo-mini"><b>or</b></span>'
-+'      <span class="logo-lg"><b>Origin Aquatech</b></span>'
++     ' '
 +'    </a>';
 
 frappe.templates["sidebar-toggle"] = '<a href="#" class="sidebar-toggle hidden-item" data-toggle="offcanvas" role="button">'
 +	        '<span class="sr-only">Toggle navigation</span>'
 +	    '</a>';
 
-frappe.templates["company-name"] = '<span class="navbar-company">Evaqua Farms</span>';
+frappe.templates["company-name"] = '<span class="navbar-company">IMMOVY</span>';
 
 frappe.templates["material-icons"] = '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
 frappe.templates["poppins"] = '<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">';
