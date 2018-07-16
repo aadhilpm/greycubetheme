@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+	
+	
 	//console.log("Current user",frappe.utils.user);
 
 	frappe.call({
@@ -40,9 +41,18 @@ $(document).ready(function() {
 	$('#body_div').addClass('content-wrapper');
 	
 	origintheme.set_user_background();
-	
+	$('#body_div').append('<div class="container-opacity"></div>');
+	$('#menu_sidebar, .container-opacity').click(function(){
+		$('.landlord').toggleClass('sidebar_menu');
+		$('body').toggleClass('sidebar-open');
+		$('#menu_sidebar i').toggleClass('octicon-x');
+	});
 });
-
+$(window).on('hashchange', function(e){
+    $('.landlord').removeClass('sidebar_menu');
+		$('body').removeClass('sidebar-open');
+		$('#menu_sidebar i').removeClass('octicon-x');
+});
 // $('.page-container').on('load', function() {
 // 	$('.page-container:visible').children('.page-head:visible').prependTo('.layout-main-section:visible');
 // 	$('.set-filters .btn').removeClass('text-muted');
@@ -120,14 +130,14 @@ origintheme.set_user_background = function(src, selector, style){
 // }
 
 frappe.templates["logo"] = '<a href="/desk#List/Customer/List" class="logo">'
-+     ' '
++     ' IMMOVY '
 +'    </a>';
 
 frappe.templates["sidebar-toggle"] = '<a href="#" class="sidebar-toggle hidden-item" data-toggle="offcanvas" role="button">'
 +	        '<span class="sr-only">Toggle navigation</span>'
 +	    '</a>';
 
-frappe.templates["company-name"] = '<span class="navbar-company">IMMOVY</span>';
+frappe.templates["company-name"] = '  <a class="navbar-brand visible-xs visible-sm" id="menu_sidebar"> <i class="octicon octicon-three-bars"></i>    </a> <span class="navbar-company">IMMOVY</span>';
 
 frappe.templates["material-icons"] = '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
 frappe.templates["poppins"] = '<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">';
