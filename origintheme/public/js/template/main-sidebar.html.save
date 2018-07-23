@@ -1,0 +1,85 @@
+
+<nav class="m-sidebar landlord counterScope" > 
+  <!-- BEGIN SIDEBAR MENU HEADER -->
+  
+  <div class="m-sidebar__header">
+    <div class="header-profile">
+      <ul class="menu-items u-hidden">
+        <li> <a  title="IMMOVY" href=""> <span class="title-name" title="IMMOVY">IMMOVY</span>
+          <div class="icon-thumbnail">
+              <div class="s-avatar w-h-45 u-margin-null-auto SP"> <span><img src="/assets/origintheme/images/immovy_favicon_png.png" /></span> </div>
+          </div>
+          </a> </li>
+      </ul>
+    </div>
+    <div class="header-controls"> <a class="controls-pin" data-toggle-pin="sidebar"> <i class="icon-line-push-pin"></i> </a> </div>
+  </div>
+  <!-- END SIDEBAR MENU HEADER -->
+  
+  <div class="m-sidebar__scrollbar ps ps--theme_default" >
+    <div > 
+      <!-- START SIDEBAR MENU -->
+      <div class="m-sidebar__menu"> 
+        <!-- BEGIN SIDEBAR MENU ITEMS -->
+        <ul class="menu-items">
+          <!-- Dashboard -->
+          <li> <a title="Dashboard"  href="#home-page" class=""> <span class="title"> Dashboard </span> <span class="icon-thumbnail"> <i class="fa fa-desktop"></i> </span> </a> </li>
+          
+          <!-- Properties --> 
+          <!---->
+          <li> <a title="Property " href="#List/Property/List"> <span class="title"> Property   </span> <span class="icon-thumbnail"> <i class="fa fa-building"></i></span> </a>
+           
+          </li>
+          <!----> 
+          
+          <!-- Accounting --> 
+          <!---->
+          <li > <a  title="Transaction " href="#List/Property%20Transaction/List"> <span class="title"> Transaction  <!--<span class="arrow" > <i class="fa fa-exchange–alt fa-lg"></i> </span>>-->  </span> <span class="icon-thumbnail"> <i class="fa fa-exchange"></i> </span> </a>
+            <!--<ul class="menu-items sub-menu">
+              <li> <a  title="Transactions"  href="/"> <span class="title">Transactions</span> <span class="icon-thumbnail">tr</span> </a> </li>
+              <li> <a  title="Balances"  href="/"> <span class="title">Balances</span> <span class="icon-thumbnail">bn</span> </a> </li>
+              <li> 
+                <a  href="/"> <span class="title">Management fee</span> <span class="icon-thumbnail">mf</span> </a>
+              </li>
+            </ul>-->
+          </li>
+          <!----> 
+          
+          <!-- Contacts --> 
+          <!---->
+          <li > <a title="Owner " href="#."> <span class="title"> Owner   </span> <span class="icon-thumbnail"> <i class="fa fa-user"></i> </span> </a>
+ <li > <a onClick="yourFunction();"" title="Owner "> <span class="title"> Owner   </span> <span class="icon-thumbnail"> <i class="fa fa-user"></i> </span> </a><!--
+
+          </li>
+          <!----> 
+          
+          <!-- Reports --> 
+          <!---->
+          <li > <a title="Clients"  href="/"> <span class="title"> Clients </span> <span class="icon-thumbnail"> <i class="fa fa-users"></i> </span> </a> </li>
+          <!----> 
+          
+         
+          
+          <!-- Applications --> 
+          <!---->
+          <li > <a title="Report" href="/"> <span class="title"> Report </span> <span class="icon-thumbnail"> <i class="fa fa-bar-chart"></i>  </span> </a> </li>
+          <!----> 
+          
+         
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+      <div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+    </div>
+    <div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;">
+      <div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+    </div>
+  </div>
+  <!-- END SIDEBAR MENU --> 
+  
+  <!-- Support -->
+  
+</nav>
+
