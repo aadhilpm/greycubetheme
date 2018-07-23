@@ -53,6 +53,7 @@ $(window).on('hashchange', function(e){
 		$('body').removeClass('sidebar-open');
 		$('#menu_sidebar i').removeClass('octicon-x');
 });
+
 // $('.page-container').on('load', function() {
 // 	$('.page-container:visible').children('.page-head:visible').prependTo('.layout-main-section:visible');
 // 	$('.set-filters .btn').removeClass('text-muted');
@@ -76,6 +77,22 @@ $(window).on('hashchange', function(e){
 // 	}
 //    }, false);
 //    if (element2.parentNode == element1)
+function call_customer_owner() {
+	console.log('in');
+
+    frappe.set_route("List", "Customer", {"customer_type": "Owner"});
+    cur_page.page.page.set_title("Owner")
+
+	
+};
+function call_customer_client() {
+	console.log('in');
+
+    frappe.set_route("List", "Customer", {"customer_type": "Client"});
+    cur_page.page.page.set_title("Client")
+
+	
+};
 frappe.provide("origintheme");
 
 // add toolbar icon
