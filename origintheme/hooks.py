@@ -21,12 +21,16 @@ app_include_css = [
     "/assets/origintheme/css/custom.css",
     "/assets/origintheme/css/temp.css",
     "/assets/origintheme/css/greycube.css",
+    "/assets/origintheme/css/c3.css" ,
 ]
 app_include_js = [
     "/assets/origintheme/js/origintheme.js",
     "/assets/origintheme/js/custom.js",
     "/assets/origintheme/js/greycube.js",
-    "/assets/js/origintheme-template.min.js"
+    "/assets/js/origintheme-template.min.js",
+    "/assets/origintheme/js/d3.min.js",
+    "/assets/origintheme/js/c3.min.js"
+
 ]
 
 # include js, css files in header of web template
