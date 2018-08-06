@@ -154,7 +154,8 @@ frappe.templates["sidebar-toggle"] = '<a href="#" class="sidebar-toggle hidden-i
 +	        '<span class="sr-only">Toggle navigation</span>'
 +	    '</a>';
 
-frappe.templates["company-name"] = '  <a class="navbar-brand visible-xs visible-sm" id="menu_sidebar"> <i class="octicon octicon-three-bars"></i>    </a> <span class="navbar-company">IMMOVY</span>';
+var company=frappe.defaults.get_default("company"); 
+frappe.templates["company-name"] = '  <a class="navbar-brand visible-xs visible-sm" id="menu_sidebar"> <i class="octicon octicon-three-bars"></i>    </a> <span class="navbar-company">'+company+'</span>';
 
 frappe.templates["material-icons"] = '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
 frappe.templates["poppins"] = '<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">';
