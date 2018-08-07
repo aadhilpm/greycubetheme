@@ -143,7 +143,7 @@ frappe.Homepage = Class.extend({
 								$("#" + function_name).html(html);
 						
 					}
-					$("#get_upcoming_rent_expiry_header").html(__("List of Properties near expiry"));
+					$("#get_upcoming_rent_expiry_header").html(__("List of Properties Near Expiry"));
 				}
 			});
 	},

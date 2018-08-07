@@ -4,7 +4,7 @@
 	<div class="jumbotron-inner">
 		<ul class="jumbotron-list">
 			<li>
-				<a href="#home-page">{{ __("Dashboard")}}</a>
+				<a href="#home-page">Dashboard</a>
 			</li>
 		</ul>
 	</div>
