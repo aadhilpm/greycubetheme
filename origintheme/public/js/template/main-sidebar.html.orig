@@ -52,22 +52,17 @@
           </li>
           <!----> 
           
-          <!-- Clients --> 
+          <!-- Reports --> 
           <!---->
           <li > <a onClick="call_customer_client();" title="Clients"> <span class="title"> Clients </span> <span class="icon-thumbnail"> <i class="fa fa-users"></i> </span> </a> </li>
           <!----> 
           
          
           
-          <!-- Reports --> 
+          <!-- Applications --> 
           <!---->
-          <li > <a title="Report" href="#modules/Real%20Estate"> <span class="title"> Report </span> <span class="icon-thumbnail"> <i class="fa fa-bar-chart"></i>  </span> </a> </li>
-          <!---->
-
-		  <!-- Reports --> 
-          <!---->
-          <li > <a title="Setting" href="/desk#Form/Real%20Estate%20Settings"> <span class="title"> Settings </span> <span class="icon-thumbnail"> <i class="fa fa-bar-chart"></i>  </span> </a> </li>
-          <!---->		  
+          <li > <a title="Report" href="/"> <span class="title"> Report </span> <span class="icon-thumbnail"> <i class="fa fa-bar-chart"></i>  </span> </a> </li>
+          <!----> 
           
          
         </ul>
