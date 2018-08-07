@@ -308,8 +308,7 @@ a:active, a:hover, a:focus {
 }
 .m-sidebar .icon-thumbnail.logo_side {
 	width: 50px;
-	-webkit-transition: all 0.2s ease; 
-	transition: all 0.2s ease;
+	display:none;
 }
 .m-sidebar .icon-thumbnail>i {
 	font-size: 26px
@@ -520,11 +519,11 @@ a:active, a:hover, a:focus {
 	padding-right: 10px;
 	padding:10px;
 }
-/*.desk_page .grid-stack-item{
+.desk_page .grid-stack-item{
     min-height: 330px;
-}*/
+}
 .m-widget--quick_buttons{
-	min-height: 160px;
+	min-height: 330px;
     position: relative;
 	margin-bottom: 0px;
     background-color: #ffffff;
@@ -873,11 +872,4 @@ body .main-header, body #body_div, .landlord.m-sidebar  {
 
 #navbar-search, #toolbar-user > li:nth-child(2), .form-group-sm.ui-front .navbar-search-icon, .nav li.dropdown-navbar-new-comments{
 	display:none;
-}
-.info-box .info-box-icon,
-.info-box-content .info-box-number{
-	font-size:30px;
-}
-.m-sidebar.landlord:hover .icon-thumbnail.logo_side{
-	opacity:0;
 }
