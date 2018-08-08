@@ -878,6 +878,10 @@ body .main-header, body #body_div, .landlord.m-sidebar  {
 .info-box-content .info-box-number{
 	font-size:30px;
 }
+.info-box-content{
+	display:inline-block;
+	padding-left: 8px;
+}
 .m-sidebar.landlord:hover .icon-thumbnail.logo_side{
 	opacity:0;
 }
