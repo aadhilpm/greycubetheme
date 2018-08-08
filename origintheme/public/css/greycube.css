@@ -392,7 +392,7 @@ a:active, a:hover, a:focus {
 	background-color: #9b2410
 }
 .admin.m-sidebar .m-sidebar__scrollbar {
-	height: calc(100% - 100px)
+	height: calc(100% - 55px)
 }
 .admin.m-sidebar .menu-items.sub-menu {
 	background-color: rgba(41,48,43,0.23)
@@ -467,6 +467,7 @@ a:active, a:hover, a:focus {
 .jumbotron1 .jumbotron-list a:hover{
 	text-decoration:none;
 }
+
 .jumbotron1 .jumbotron-list>*:nth-child(n+1) {
     display: none;
 }
@@ -491,20 +492,22 @@ a:active, a:hover, a:focus {
     padding-right: 5px;
 }
 .jumbotron1 .jumbotron-list {
-    font-family: "Montserrat", Avenir, sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: 0;
-    padding: 4px 0;
+    padding: 6px 0;
     margin: 0;
     border: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     display: block;
     list-style: none;
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-	
+	letter-spacing:0.4px;
 }
-
+.content.desk_page {
+	margin-top:06px;
+}
 #page-home-page .layout-main-section-wrapper, #page-home-page .layout-main-section{padding:0 !important;}
 #page-home-page .layout-main-section{border:none !important;}
 #page-home-page > .page-head{display:none;}
@@ -884,4 +887,9 @@ body .main-header, body #body_div, .landlord.m-sidebar  {
 }
 .m-sidebar.landlord:hover .icon-thumbnail.logo_side{
 	opacity:0;
+}
+.layout-main-section  > .form-inner-toolbar > .btn-default{
+	background-color: #3b5998;
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+    border-bottom: 1px solid #133783;
 }
