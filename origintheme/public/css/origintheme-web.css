@@ -1,4 +1,4 @@
-footer.web-footer{display:none}
+footer.web-footer,.nav .btn-login-area{display:none}
 .navbar-header {
   display: none;
 }
