@@ -5,13 +5,23 @@
  "doctype": "Page", 
  "icon": "fa fa-building", 
  "idx": 0, 
- "modified": "2018-07-04 14:27:24.849982", 
+ "modified": "2018-08-08 14:58:48.117817", 
  "modified_by": "Administrator", 
  "module": "origin theme", 
  "name": "home-page", 
  "owner": "Administrator", 
  "page_name": "Home Page", 
- "roles": [], 
+ "roles": [
+  {
+   "role": "System Manager"
+  }, 
+  {
+   "role": "Agency Staff"
+  }, 
+  {
+   "role": "Agency Staff"
+  }
+ ], 
  "script": null, 
  "standard": "Yes", 
  "style": null, 

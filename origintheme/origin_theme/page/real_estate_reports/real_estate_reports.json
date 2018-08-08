@@ -5,13 +5,20 @@
  "doctype": "Page", 
  "icon": "fa fa-building", 
  "idx": 0, 
- "modified": "2018-08-07 20:42:07.229560", 
+ "modified": "2018-08-08 14:59:23.486108", 
  "modified_by": "Administrator", 
  "module": "origin theme", 
  "name": "real-estate-reports", 
  "owner": "Administrator", 
  "page_name": "Real Estate Reports", 
- "roles": [], 
+ "roles": [
+  {
+   "role": "System Manager"
+  }, 
+  {
+   "role": "Agency Owner"
+  }
+ ], 
  "script": null, 
  "standard": "Yes", 
  "style": null, 
