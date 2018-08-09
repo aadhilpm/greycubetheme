@@ -34,7 +34,7 @@
           
           <!-- Accounting --> 
           <!---->
-          <li > <a  title="Transaction" href="#List/Property%20Transaction/List"> <span class="title"> {{ __("Transaction") }}  <!--<span class="arrow" > <i class="fa fa-exchange–alt fa-lg"></i> </span>>-->  </span> <span class="icon-thumbnail"> <i class="fa fa-exchange"></i> </span> </a>
+          <li > <a  title="Transaction " href="#List/Property%20Transaction/List"> <span class="title"> {{ __("Transaction") }}  <!--<span class="arrow" > <i class="fa fa-exchange–alt fa-lg"></i> </span>>-->  </span> <span class="icon-thumbnail"> <i class="fa fa-exchange"></i> </span> </a>
             <!--<ul class="menu-items sub-menu">
               <li> <a  title="Transactions"  href="/"> <span class="title">Transactions</span> <span class="icon-thumbnail">tr</span> </a> </li>
               <li> <a  title="Balances"  href="/"> <span class="title">Balances</span> <span class="icon-thumbnail">bn</span> </a> </li>
@@ -47,7 +47,7 @@
           
           <!-- Contacts --> 
           <!---->
-          <li > <a onClick="call_customer_owner();" title="Owners"> <span class="title"> {{ __("Owners") }}   </span> <span class="icon-thumbnail"> <i class="fa fa-tags"></i> </span> </a></li>
+          <li > <a onClick="call_customer_owner();"title="Owners "> <span class="title"> {{ __("Owners") }}   </span> <span class="icon-thumbnail"> <i class="fa fa-tags"></i> </span> </a></li>
 
           </li>
           <!----> 
