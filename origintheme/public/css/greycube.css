@@ -458,7 +458,7 @@ a:active, a:hover, a:focus {
 }
 
 .jumbotron1 .jumbotron-list span,  .jumbotron1 .jumbotron-list a, .jumbotron1 .jumbotron-list i, .jumbotron1 .jumbotron-list li {
-    color: #8796a6;
+    color: #fff;
     font-weight: 300;
     text-shadow: none;
     -webkit-transition: all 0.2s ease;
@@ -490,6 +490,8 @@ a:active, a:hover, a:focus {
 .jumbotron1 .jumbotron-inner {
     padding-left: 5px;
     padding-right: 5px;
+	    background: #3d7524;
+		    margin-right: -5px;
 }
 .jumbotron1 .jumbotron-list {
     font-family: 'Poppins', sans-serif;
@@ -504,6 +506,8 @@ a:active, a:hover, a:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
 	letter-spacing:0.4px;
+	color:#fff;
+	font-size: 20px;
 }
 .content.desk_page {
 	margin-top:06px;
@@ -892,4 +896,7 @@ body .main-header, body #body_div, .landlord.m-sidebar  {
 	background-color: #3b5998;
     background-image: linear-gradient(#4e69a2, #3b5998 50%);
     border-bottom: 1px solid #133783;
+}
+.btn_reload{
+	padding-top: 5px;
 }
