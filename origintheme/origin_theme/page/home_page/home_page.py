@@ -33,7 +33,7 @@ def get_todays_transaction():
 
 @frappe.whitelist()
 def get_unpaid_client():
-	data=frappe.db.sql("""select sum(commission_from_client) As "UnPaid From Client" from `tabProperty Transaction` where transaction_status in ("Unpaid" ,"Client Unpaid")""")[0]
+	data=frappe.db.sql("""select sum(commission_from_client) As "UnPaid From Client" from `tabProperty Transaction` where transaction_status in ("Non Payé" ,"Client non payé")""")[0]
 	label=_('Unpaid Client')
 	if not data:
 		return label,0
@@ -42,7 +42,7 @@ def get_unpaid_client():
 
 @frappe.whitelist()
 def get_unpaid_owner():
-	data=frappe.db.sql("""select sum(commission_from_client) As "UnPaid From Client" from `tabProperty Transaction` where transaction_status in ("Unpaid" ,"Owner Unpaid")""")[0]
+	data=frappe.db.sql("""select sum(commission_from_client) As "UnPaid From Client" from `tabProperty Transaction` where transaction_status in ("Non Payé" ,"Propriétaire non payé")""")[0]
 	label=_('Unpaid Owner')
 	if not data:
 		return label,0
@@ -52,11 +52,15 @@ def get_unpaid_owner():
 @frappe.whitelist()
 def get_upcoming_rent_expiry_list():
     cur_date = today()
-    data = frappe.db.sql("""select P.property_name AS Property , PT.rent_end_date AS Expires,P.name
+    data = frappe.db.sql("""select P.property_name AS Property , 
+									PT.rent_end_date AS Expires,
+									PT.customer AS Client,
+									PT.telephone AS Telephone,
+									PT.customer_email AS Email,P.name
 							from `tabProperty`AS P INNER JOIN
 							`tabProperty Transaction` AS PT
 							ON PT.property = P.name
-							where P.property_status = "Rented"
+							where P.property_status = "Loué"
 							and DATEDIFF (rent_end_date , CURDATE()) <= 60
 							and PT.docstatus = 1""")
     label=_('List Of Properties Near Expiry')
