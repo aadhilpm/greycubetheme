@@ -124,6 +124,7 @@ frappe.Homepage = Class.extend({
 				method: "origintheme.origin_theme.page.home_page.home_page.get_upcoming_rent_expiry_list",
 			})
 			.then(function (r) {
+				console.log(r)
 				if (!r.exc && r.message) {
 					let data = r.message[1];
 					console.log(data)
@@ -132,7 +133,7 @@ frappe.Homepage = Class.extend({
 					
 							const html = `
 								<table class="table table-bordered"  style="background-color: #f9f9f9;">
-									<thead><tr><th>${__("#")}</th><th>${__("Property Name")}</th><th>${__("Expiry Date")}</th></tr></thead>
+									<thead><tr><th>${__("#")}</th><th>${__("Property Name")}</th><th>${__("Expiry")}</th></tr></thead>
 									<tbody>
 										${data.map((c,i) => `<tr><td>${i+1}</td><td><a class="grey list-id ellipsis"
 										href="#Form/Property/${c[2]}"> ${c[0]} </a></td><td>${c[1]}</td>
