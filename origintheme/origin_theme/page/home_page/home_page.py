@@ -1,3 +1,4 @@
+# coding: utf-8
 # Copyright (c) 2018, GreyCube Technologies and contributors
 # For license information, please see license.txt
 
@@ -53,8 +54,7 @@ def get_unpaid_owner():
 def get_upcoming_rent_expiry_list():
     cur_date = today()
     data = frappe.db.sql("""select P.property_name AS Property , 
-									PT.rent_end_date AS Expires,
-									P.name,
+									PT.rent_end_date AS Expires,P.name,
 									PT.customer AS Client,
 									PT.telephone AS Telephone,
 									PT.customer_email AS Email

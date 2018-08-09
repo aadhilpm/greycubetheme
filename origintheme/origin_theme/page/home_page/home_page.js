@@ -124,7 +124,6 @@ frappe.Homepage = Class.extend({
 				method: "origintheme.origin_theme.page.home_page.home_page.get_upcoming_rent_expiry_list",
 			})
 			.then(function (r) {
-				console.log(r)
 				if (!r.exc && r.message) {
 					let data = r.message[1];
 					console.log(data)
