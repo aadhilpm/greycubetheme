@@ -132,10 +132,10 @@ frappe.Homepage = Class.extend({
 					
 							const html = `
 								<table class="table table-bordered"  style="background-color: #f9f9f9;">
-									<thead><tr><th>${__("#")}</th><th>${__("Property Name")}</th><th>${__("Expiry")}</th></tr></thead>
+									<thead><tr><th>${__("#")}</th><th>${__("Property Name")}</th><th>${__("Expiry")}</th><th>${__("Client")}</th><th>${__("Telephone")}</th><th>${__("Email")}</th></tr></thead>
 									<tbody>
 										${data.map((c,i) => `<tr><td>${i+1}</td><td><a class="grey list-id ellipsis"
-										href="#Form/Property/${c[2]}"> ${c[0]} </a></td><td>${c[1]}</td>
+										href="#Form/Property/${c[2]}"> ${c[0]} </a></td><td>${c[1]}</td><td>${c[3]}</td><td>${c[4]}</td><td>${c[5]}</td>
 										</tr>`
 										).join('')}
 									</tbody>
