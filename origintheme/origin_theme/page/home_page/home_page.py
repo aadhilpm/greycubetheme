@@ -25,7 +25,7 @@ def get_property_status():
 @frappe.whitelist()
 def get_todays_transaction():
     cur_date = today()
-    data = frappe.db.sql("""select transaction_type As "Transaction Type", count(*) As Count from `tabProperty Transaction` where transaction_date = %s and docstatus = 1 group by transaction_type """, (cur_date))
+    data = frappe.db.sql("""select transaction_type As "Transaction Type", count(*) As Count from `tabProperty Transaction` where Date(transaction_date) = %s and docstatus = 1 group by transaction_type """, (cur_date))
     label=_('Todays Transactions')
     if not data:
         return label,0
