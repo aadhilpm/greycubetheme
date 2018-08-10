@@ -1,21 +1,23 @@
 footer.web-footer,.nav .btn-login-area{display:none}
 .navbar-header {
-  display: none;
+	 left: 44.5%;
+    position: relative;
+    top: 0;
 }
 body.body_login{
-    background: url(/files/bg_2-min.jpg) no-repeat center center fixed;
+    background: url(/files/desk_bg_immovy.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 body.body_login div.hero-and-content {
     background-color: transparent;
 }
-#page-login .btn-primary{
+.btn-primary{
 	    border-color: #41a541;
     background-color: #41a541;
 color: #fff;
 }
-#page-login .btn-primary:hover, #page-login .btn-primary:focus,#page-login .btn-primary.focus, #page-login .btn-primary:active, #page-login .btn-primary.active, #page-login .open > .dropdown-toggle.btn-primary {
+ .btn-primary:hover, .btn-primary:focus, .btn-primary.focus,  .btn-primary:active,  .btn-primary.active,  .open > .dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #3a933a;
     border-color: #3a933a;
@@ -33,4 +35,64 @@ color: #fff;
 }
 #page-login .page-card{
 	border-radius: 0;
+}
+#website-post-login .dropdown-menu > li.switch-to-desk, #website-post-login .dropdown-menu > li:first-child{
+	display:none;
+}
+/*#page-property-lead .page-content-wrapper > .page-head{
+	display:inline-block;
+}*/
+#page-property-lead .page-content-wrapper > .page-head > .col-sm-4, #page-property-lead .page-content-wrapper > .page-head > .col-sm-4 .page-header-actions-block{
+	display:none;
+}
+#page-property-lead .page-content-wrapper > .page-head > .col-sm-8 {
+	width:100%;
+}
+#page-property-lead .page_content .introduction{
+	display:none;
+}
+#page-property-lead .page_content, #page-property-lead  .web-form-page{
+	padding-top:0;
+}
+#page-property-lead .section{
+	padding-bottom:0;
+}
+#page-property-lead .web-form-page .btn-form-submit{
+		text-indent: -9999px;
+		position: relative;
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: -25px;
+	}
+	#page-property-lead .web-form-page .btn-form-submit::after{
+		content: "Envoyez";
+  text-indent: 0;
+  display: block;
+      position: absolute;
+    top: 0px;
+    left: 0px;
+	width:100px;
+    font-size: 18px;
+    line-height: 24px;
+		}
+#page-property-lead {
+	max-width: 40%;
+}
+@media (max-width: 768px) {
+	.navbar-header .navbar-brand{
+		position: absolute;
+    left: 39%;
+    top: 0;
+	}
+	.navbar-header {
+	    left: 0;
+	    position: relative;
+	}
+	.navbar-header .dropdown .dropdown-menu li:nth-child(2){
+		display:none;
+	}
+	#page-property-lead {
+	max-width: 80%;
+}
 }

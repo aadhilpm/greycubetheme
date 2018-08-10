@@ -62,6 +62,28 @@ a:active, a:hover, a:focus {
 	overflow-x: hidden;
 	position: relative
 }
+
+#page-real-estate-reports .page-title, #page-real-estate-reports  .page-head{
+	display:none;
+	}
+	#page-real-estate-reports .page-body{
+		padding-right: 0;
+    padding-left: 0;
+		}
+#page-real-estate-reports .layout-main .layout-main-section-wrapper .layout-main-section{
+	    border-left: 0px ;
+    border-top: 0px;
+    padding: 0 0 0 0;
+}
+#page-real-estate-reports .m-action-btn-icon.three>a:nth-child(2), #page-real-estate-reports .m-action-btn-icon.three>a:nth-child(4), #page-real-estate-reports .m-action-btn-icon.three>a:nth-child(5){
+	border-right : 0;
+}
+#page-real-estate-reports .m-action-btn-icon.three>a:nth-child(3){
+	border-right: 1px solid #edf0f5;
+}
+ #page-real-estate-reports .m-action-btn-icon.three>a:nth-child(4){
+	 border-bottom: 1px solid #edf0f5;
+}
 @media (max-width: 767px) {
 .m-sidebar__scrollbar {
 	height: calc(100% - 102px)
