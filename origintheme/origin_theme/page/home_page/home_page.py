@@ -51,6 +51,20 @@ def get_unpaid_owner():
 		return label,data
 
 @frappe.whitelist()
+def open_lead_count():
+	data=frappe.db.sql("""SELECT
+						count(*) as "Open Lead Count"
+						FROM
+		                `tabLead`
+						WHERE `tabLead`.status = "Open"
+		                and `tabLead`.docstatus < 2;""")[0]
+	label=_('Open Lead')
+	if not data:
+		return label,0
+	else:
+		return label,data
+
+@frappe.whitelist()
 def get_upcoming_rent_expiry_list():
     cur_date = today()
     data = frappe.db.sql("""select P.property_name AS Property , 

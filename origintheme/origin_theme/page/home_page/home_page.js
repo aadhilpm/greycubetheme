@@ -30,6 +30,7 @@ frappe.Homepage = Class.extend({
 		me.render_todays_transaction();
 		me.render_widget("unpaid_client");
 		me.render_widget("unpaid_owner");
+		me.render_widget("open_lead_count");
 		me.render_table("expiring_rent_properties");
 	},
 
