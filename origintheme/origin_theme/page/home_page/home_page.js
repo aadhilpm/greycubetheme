@@ -111,7 +111,11 @@ frappe.Homepage = Class.extend({
 			.then(function (r) {
 				if (!r.exc && r.message) {
 					let data = r.message;
-					amount = format_currency(data[1], currency)
+					if (function_name=='open_lead_count') {
+						amount = data[1]
+					} else {
+						amount = format_currency(data[1], currency)
+					}
 					if (data) {
 						$("#" + function_name + "_name").html(__(data[0]));
 						$("#" + function_name + "_value").html(amount);
