@@ -51,7 +51,7 @@ def get_unpaid_owner():
 		return label,data
 
 @frappe.whitelist()
-def open_lead_count():
+def get_open_lead_count():
 	data=frappe.db.sql("""SELECT
 						count(*) as "Open Lead Count"
 						FROM
