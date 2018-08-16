@@ -796,6 +796,9 @@ a:active, a:hover, a:focus {
 .width-100{width:100%;}
 .text-center{text-align:center;}
 .slide-description{width:100%;}
+.slide-description h2 .icon-svg .fa{    font-size: 32px;
+    color: #41a541;
+    line-height: 40px;}
 #navbar-breadcrumbs {display:none;}
 
 .navbar-desk > .navbar-brand.toggle-sidebar{
