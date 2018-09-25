@@ -925,3 +925,31 @@ body .main-header, body #body_div, .landlord.m-sidebar  {
 .btn_reload{
 	padding-top: 5px;
 }
+.boxes{
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center
+}
+.boxes a{
+	padding:10px;
+}
+.boxes a > span{
+	color: #3d7524;
+	    font-size: 30px;
+		margin-top: 14px;
+}
+.boxes a > p{
+	margin:0;
+	padding:7px 0;
+}
+.boxes .col-md-6{
+	border-bottom:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+.boxes .col-md-6:last-child {
+	border-right:0;
+}
+.m-widget--quick_buttons .box-master{
+	padding-top:55px;
+	padding-bottom:55px;
+}
