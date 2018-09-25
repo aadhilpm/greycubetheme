@@ -27,15 +27,10 @@ $(document).ready(function() {
 	$('.navbar-desk').prepend(frappe.render_template("company-name"));
 	$('head').append(frappe.render_template("material-icons"));
 	$('head').append(frappe.render_template("poppins"));
-
 	$('header').addClass('main-header');
 	$('.dropdown-help').addClass('hidden');
-	$('#toolbar-user [href*="/index"]').addClass('hidden');
 	$('#toolbar-user [href*="#background_jobs"]').addClass('hidden');
-	// $('.dropdown-navbar-new-comments').addClass('hidden');
 	$('header .navbar').removeClass('navbar-fixed-top');
-	
-	// $('#navbar-breadcrumbs').addClass('hidden');
 	$('.navbar-home').addClass('hidden');
 	$('body').addClass('skin-origin sidebar-mini sidebar-collapse');	
 	$('#body_div').addClass('content-wrapper');

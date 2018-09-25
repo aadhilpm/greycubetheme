@@ -76,7 +76,7 @@ def get_upcoming_rent_expiry_list():
 							`tabProperty Transaction` AS PT
 							ON PT.property = P.name
 							where P.property_status = "Loué"
-							and DATEDIFF (rent_end_date , CURDATE()) <= 60
+							and DATEDIFF (rent_end_date , CURDATE()) <= 90
 							and PT.docstatus = 1""")
     label=_('List Of Properties Near Expiry')
     if not data:

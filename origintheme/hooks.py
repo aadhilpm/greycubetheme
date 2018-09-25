@@ -139,4 +139,3 @@ website_context = {
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "origintheme.event.get_events"
 # }
-
