@@ -139,7 +139,7 @@
 						</div>
 					</div>
 					<div class="m-panel__body">
-							<a href="javascript:frappe.set_route('List', 'Lead',{'status':'Open'});">
+							<a href="javascript:void(0);" onclick="goToLead();">
 							<div class="info-box">         
 									<span class="info-box-icon bg-red"><i class="fa fa-tasks"></i></span>
 									<div class="info-box-content">
@@ -170,3 +170,8 @@
 		
 	</div>
 </section>
+<script type="text/javascript">
+    function goToLead () {
+		frappe.set_route("List", "Lead",{'status':'Open'})
+    }
+</script>
