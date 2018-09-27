@@ -32,6 +32,10 @@ frappe.Homepage = Class.extend({
 		me.render_widget("unpaid_owner");
 		me.render_widget("open_lead_count");
 		me.render_table("expiring_rent_properties");
+		$(".lead_id").onclick=function (){
+			frappe.new_doc('Lead')
+		};
+		
 	},
 
 	render_property_status_chart: function () {
