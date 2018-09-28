@@ -76,7 +76,6 @@ frappe.Homepage = Class.extend({
 					let results = r.message || [];
 					let graph_items = results[1];
 					if (graph_items==0){graph_items=[["No Transaction today",0]]}
-					console.log(graph_items)
 					cust_colors = ['#78fca4', '#f7fc78', '#78a4fc', '#fc7986', '#788cfc']
 					var chart = c3.generate({
 						bindto: '#get_todays_transaction',
@@ -131,7 +130,6 @@ frappe.Homepage = Class.extend({
 			.then(function (r) {
 				if (!r.exc && r.message) {
 					let data = r.message[1];
-					console.log(data)
 					if (data) {
 
 					
