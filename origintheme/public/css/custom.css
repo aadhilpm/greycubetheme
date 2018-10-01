@@ -608,3 +608,4 @@ input[type="radio"], input[type="checkbox"] {
     bottom: 0px;
     overflow-y: auto;
 }
+#toolbar-user > li:nth-child(4){display:none;}
