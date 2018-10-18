@@ -609,3 +609,13 @@ input[type="radio"], input[type="checkbox"] {
     overflow-y: auto;
 }
 #toolbar-user > li:nth-child(4){display:none;}
+body[data-route="List/Event/Calendar/Default"] .content.page-container[data-page-route="List/Event"] .page-actions > .menu-btn-group > .btn.dropdown-toggle,
+.content.page-container[data-page-route="Form/Real Estate Settings"] .page-actions > .menu-btn-group > .btn.dropdown-toggle, 
+.content.page-container[data-page-route="List/Property Transaction"] .page-actions > .menu-btn-group > .btn.dropdown-toggle, 
+.content.page-container[data-page-route="List/Customer"] .page-actions > .menu-btn-group > .btn.dropdown-toggle, .content.page-container[data-page-route="List/Lead"] .page-actions > .menu-btn-group > .btn.dropdown-toggle,
+.content.page-container[data-page-route="Form/Lead"] .form-inner-toolbar > .btn-group > ul.dropdown-menu > li:nth-child(2),
+.content.page-container[data-page-route="Form/Lead"] .form-inner-toolbar > .btn-group > ul.dropdown-menu > li:last-child{
+	display:none;
+	visibility:hidden;
+	opacity:0;
+}

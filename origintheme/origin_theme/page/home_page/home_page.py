@@ -71,7 +71,7 @@ def get_upcoming_rent_expiry_list():
 									PT.rent_end_date AS Expires,P.name,
 									PT.customer AS Client,
 									PT.telephone AS Telephone,
-									PT.customer_email AS Email
+									IFNULL(PT.customer_email," ") AS Email
 							from `tabProperty`AS P INNER JOIN
 							`tabProperty Transaction` AS PT
 							ON PT.property = P.name
