@@ -3,6 +3,9 @@ from setuptools import setup, find_packages
 from pip.req import parse_requirements
 import re, ast
 
+with open('requirements.txt') as f:
+	install_requires = f.read().strip().split('\n')
+	
 # get version from __version__ variable in origintheme/__init__.py
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
