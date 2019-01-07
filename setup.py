@@ -10,12 +10,11 @@ with open('origintheme/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
-requirements = parse_requirements("requirements.txt", session="")
 
 setup(
 	name='origintheme',
 	version=version,
-	description='origin theme',
+	description='origintheme',
 	author='GreyCube Technologies',
 	author_email='admin@greycube.in',
 	packages=find_packages(),
